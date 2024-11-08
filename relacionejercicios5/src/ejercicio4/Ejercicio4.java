@@ -12,7 +12,7 @@ public class Ejercicio4 {
 		System.out.println("introduce la cantidad de elementos del primer array");
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
-
+		
 		int[] v = new int[n];
 		for (int i = 0; i < v.length; i++) {
 			System.out.println("introduce el elemento del primer array " + i);
