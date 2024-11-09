@@ -12,13 +12,16 @@ public class Ejercicio3 {
 		Scanner sc= new Scanner(System.in);
 		int n=sc.nextInt();
 		int[] v = new int [n];
-		int multiplicacion = v[n];
+		
 		
 		System.out.println("introduce un numero para calcular ek nuevo array");
-		n=sc.nextInt();
+		int n1=sc.nextInt();
+		int multiplicacion = n*n1;
 		
 		
- 		int x[]= new int [multiplicacion*n];
+ 		int x[]= new int [multiplicacion];
+ 		
+ 		System.out.println(x.length);
 		
 
 	}
