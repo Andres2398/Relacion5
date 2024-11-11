@@ -47,14 +47,14 @@ public class Ejercicio11 {
 				posicionv=numero;
 			}
 			
-				
-			for (int j = 0; j < x.length; j++) {
-				if (x[i]==numero) {
+		}	
+		for (int i = 0; i < x.length; i++) {
+			if (x[i]==numero) {
 						posicionx=numero;
 					}
 				}
 				
-			}
+		
 			if(posicionv>-1 && posicionx>-1) 
 				System.out.println("En el primer Array se encuentra en la posición " + posicionv + " y en el segundo en la poscion " + posicionx);
 			else if (posicionv>-1 && posicionx==-1)
