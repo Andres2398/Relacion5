@@ -22,7 +22,7 @@ public class Ejercicio13 {
 					divisor++;
 			}
 			
-			if(primo=true) {
+			if(primo==true) {
 				primos[i]=numero;
 				i++;
 			}
