@@ -14,25 +14,42 @@ public class Ejercicio13 {
 		
 		int i=0;
 		while(i<primos.length) {
+			primo=true;
+			divisor=2;
 			
-			while(divisor<numero/2 && primo) {
+			
+			
+			while(divisor<=Math.sqrt(numero) && primo==true) {
 				if(numero%divisor==0)
 					primo=false;
 				else
 					divisor++;
 			}
 			
-			if(primo=true) {
+			if(primo==true) {
 				primos[i]=numero;
 				i++;
 			}
 			numero++;
-			divisor=2;
+			
 			
 		}	
 		
 		for (int j = 0; j < primos.length; j++) {
 			System.out.println(primos[j]);
+		}
+		
+		System.out.print("{2} ");
+		for (int j = 0; j < primos.length; j++) {
+			if(j%5!=0)
+				System.out.print("{" + primos[j] +  "} ");
+			else {
+				System.out.print("\n");
+				
+				
+				
+			}
+				
 		}
 		
 		
