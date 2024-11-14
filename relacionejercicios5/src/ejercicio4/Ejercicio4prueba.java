@@ -8,18 +8,18 @@ public class Ejercicio4prueba {
 	// corresponde con el contenido de los elementos de otro, indicando cuántos se
 	// corresponden.
 
-	static int[] array(int numero) {
-		int b=1;
+	static int[] array(int tamano) {
+		
 
 		Scanner sc = new Scanner(System.in);
-		int[] a = new int[numero];
-		for (int i = 0; i < a.length; i++) {
-			System.out.println("introduce el elemento " + i + " del " + b + "º array ");
-			a[i] = sc.nextInt();
+		int[] rellenararray = new int[tamano];
+		for (int i = 0; i < rellenararray.length; i++) {
+			System.out.println("introduce el elemento " + i + " del array ");
+			rellenararray[i] = sc.nextInt();
 
 		}
-		b++; //preguntar porque no se puede poner debajo del return, preguntar como arreglarlo
-		return a;
+		
+		return rellenararray;
 		
 	}
 
@@ -28,15 +28,15 @@ public class Ejercicio4prueba {
 		System.out.println("introduce la cantidad de elementos del primer array");
 		Scanner sc = new Scanner(System.in);
 
-		int n = sc.nextInt();
+		int tamano = sc.nextInt();
 
-		int[] v = array(n); //pedir el pimer array
+		int[] v = array(tamano); //pedir el pimer array
 
 		System.out.println("introduce la cantidad de elementos del segundo array");
 
-		int n1 = sc.nextInt(); 
+		int tamano2 = sc.nextInt(); 
 
-		int[] x = array(n1); //pedir el segundo array
+		int[] x = array(tamano2); //pedir el segundo array
 
 		int i = 0; 
 		int igual = 0;
@@ -48,12 +48,17 @@ public class Ejercicio4prueba {
 			i++;
 		}
 
-		if (igual == n && igual == n1) {	//comprobar si todos los numeros son iguales
+		if (igual == tamano && igual == tamano2) {	//comprobar si todos los numeros son iguales
 			System.out.println("hay " + igual + " numeros iguales ¡Todos tus numeros son iguales!");
 
 		} else {
 			System.out.println("hay " + igual + " numeros iguales");
 		}
+		
+		
+		
+		
+		
 	}
 
 }
